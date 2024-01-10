@@ -1,0 +1,98 @@
+    /* header styles */
+    h1 {
+        background-color: #8DD5FF;
+        padding: 1rem;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    /* inventory management styles */
+    h5 { font-size: 1.75rem;
+        text-align: center;
+        text-shadow: 2px 2px 3px #3984b0;
+    }
+
+    /* card styles */
+    .card {
+        background-color: #F9F3D6;
+        border-radius: 0.25rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
+      
+    .card-body {
+    padding: 1.25rem;
+    }
+    
+    .card-header {
+    background-color: #F9F3D6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.75rem 1.25rem;
+    }
+
+    /* add button styles */
+    a.btn-primary {
+        background-color: #8DD5FF;
+        border-color: #000000;
+        color: #000000;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 20px 12px;
+        text-decoration: none;
+    }
+    
+    a.btn-primary:hover {
+        background-color: #D3D3D3;
+        border-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    a.btn-block {
+        display: block;
+    }
+    
+    a.btn-sm {
+        padding: 5px 10px;
+        font-size: 17px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+    
+    /* update button styles */
+    a.btn-info {
+        background-color: #8DD5FF;
+        border-color: #000000;
+        color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 2px 3px;
+        text-decoration: none;
+    }
+    
+    a.btn-info:hover {
+        background-color: #49a1d1;
+        border-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* delete button styles  */
+    a.btn-danger {
+        background-color: #FF6961;
+        border-color: #000000;
+        color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 2px 3px;
+        text-decoration: none;
+    }
+    
+    a.btn-danger:hover {
+        background-color: #49a1d1;
+        border-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* Headline Text */
+    #header_text:hover { text-decoration: none;}

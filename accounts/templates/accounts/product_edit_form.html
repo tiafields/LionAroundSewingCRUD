@@ -1,0 +1,26 @@
+{% extends 'accounts/main.html' %}
+
+{% load static %}
+{% block extended_styling %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/edit_form.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<form action="" method= "POST">
+    {% csrf_token %}
+    <!-- <input type="text" name="name" value="{{ user.name }}">
+    <input type="email" name="email" value="{{ user.email }}">
+    <button type="submit">Submit</button>    {% csrf_token %} -->
+    <label for="name">Product Name:</label>
+    <input type="name" name="name" value="{{ product.product_Name }}">
+    <label for="">Product Type:</label>
+    <label for="">Cost:</label>
+    <label for="">Color:</label>
+    <label for="">Size:</label>
+    <label for="">Quantity:</label>
+    <!-- {{form}} -->
+    <input type="submit" name="Submit Query" class="submit_button">
+</form>
+
+{% endblock%}

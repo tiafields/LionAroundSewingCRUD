@@ -1,0 +1,39 @@
+{% extends 'accounts/main.html' %}  {% comment %} inherting from the main  {% endcomment %}
+
+{% block content %}
+
+<div class="col-md-12">
+    
+    <div class="card card-body">
+        {% comment %} link to product_form.html {% endcomment %}
+        <a class= "btn btn-primary btn-sm btn-block" href="{% url 'add_product'%}">Add Product</a>
+        <table class = "table table-sm">
+            <tr>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Product Type</th>
+                <th>Cost</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Update</th>
+                <th>Remove</th>
+            </tr>
+            {% for product in products %}
+                <tr>
+                    <td>{{product.product_Name}}</td>
+                    <td>{{product.id}}</td>
+                    <td>{{product.product_Type}}</td>
+                    <td>{{product.cost}}</td>
+                    <td>{{product.color}}</td>
+                    <td>{{product.size}}</td>
+                    <td>{{product.quantity}}</td>
+                    <td><a class="btn btn-sm btn-info" href="{% url 'edit_product' product.id%}">Update</a></td>
+                    <td><a class="btn btn-sm btn-danger" href="{% url 'delete_entry' product.id%}">Delete</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+{% endblock %}

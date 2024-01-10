@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block extended_styling %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/edit_form.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <form action="" method= "POST" id="formid">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" name="Submit" value="Add Product" class="submit_button">
+    </form>
+
+{% endblock %}
