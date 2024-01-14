@@ -25,4 +25,6 @@ urlpatterns = [
     path('', include('accounts.urls'))
 ]
 
+print('staticfilesurlpatterns')
+print(staticfiles_urlpatterns())
 urlpatterns += staticfiles_urlpatterns()
