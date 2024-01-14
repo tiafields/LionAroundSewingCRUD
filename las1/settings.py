@@ -129,6 +129,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_FILES_LOCAL_PATH = os.path.join(BASE_DIR, 'accounts/static/')
+
+print(f'static {STATIC_FILES_LOCAL_PATH}')
+
 if DEBUG:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'accounts/static/')
